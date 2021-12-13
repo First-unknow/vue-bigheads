@@ -2,16 +2,18 @@ Easily generate avatars for your projects with Big Heads.
 
 This is the Vue version of the [original Big Heads library](https://github.com/RobertBroersma/bigheads) by [@RobertBroersma](https://github.com/RobertBroersma). [https://bigheads.io](https://bigheads.io)
 
+This is fixed ***"this.$bigHeadsExtras is not a function"*** problem version of the [original vue-bigheads library](https://github.com/DerpyScripts/vue-bigheads) by [@DerpyScripts](https://github.com/DerpyScripts).
+
 ## Installation
 
 ```shell
-yarn add vue-bigheads
+yarn add fixed-vue-bigheads
 ```
 
 or
 
 ```shell
-npm install vue-bigheads --save
+npm install fixed-vue-bigheads --save
 ```
 
 then, in your app you can import globally:
@@ -20,7 +22,7 @@ then, in your app you can import globally:
 
 ```javascript
 import Vue from "vue";
-import VueBigHeads from "vue-bigheads";
+import VueBigHeads from "fixed-vue-bigheads";
 
 Vue.use(VueBigHeads);
 ```
@@ -28,7 +30,7 @@ Vue.use(VueBigHeads);
 or import locally:
 
 ```javascript
-import { BigHead } from "vue-bigheads";
+import { BigHead } from "fixed-vue-bigheads";
 
 export default {
   components: {
@@ -133,7 +135,7 @@ Here's an example of a custom illustration component:
 </template>
 
 <script>
-import { colors } from 'vue-bigheads';
+import { colors } from 'fixed-vue-bigheads';
 
 export default {
   name: 'MyGraphic',
@@ -167,7 +169,7 @@ The `skinTone` prop is expandable by passing an object containing color classes 
 ### Example config
 ```javascript
 import Vue from "vue";
-import VueBigHeads from "vue-bigheads";
+import VueBigHeads from "fixed-vue-bigheads";
 import MyCustomEyes from "./components/MyCustomEyes.vue";
 
 Vue.use(VueBigHeads, {
