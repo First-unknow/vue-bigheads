@@ -1,6 +1,6 @@
 {
   "name": "fixed-vue-bigheads",
-  "version": "0.2.2",
+  "version": "0.2.3",
   "description": "BigHeads library by @RobertBroersma ported to Vue, with some added extra features",
   "main": "src/index.js",
   "repository": {
